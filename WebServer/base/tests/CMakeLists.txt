@@ -1,2 +1,0 @@
-add_executable(LoggingTest LoggingTest.cc)
-target_link_libraries(LoggingTest libserver_base)

@@ -1,0 +1,14 @@
+set(base_SRCS
+    AsyncLogging.cc
+    CountDownLatch.cc
+    FileUtil.cc
+    LogFile.cc
+    Logging.cc
+    LogStream.cc
+    Thread.cc
+   )
+
+add_library(server_base STATIC ${base_SRC})
+target_link_libraries(server_base pthread rt)
+
+add_subdirectory(tests)
